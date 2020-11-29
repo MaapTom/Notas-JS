@@ -1,0 +1,102 @@
+.modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.342);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal form {
+  width: 310px;
+  height: 360px;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: modal .3s forwards;
+}
+
+.modal form div {
+  font-family: 'Roboto Slab', serif;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal .input-titulo input{
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  padding: 2px;
+  padding-left: 3px;
+  border: 2px solid #000;
+  border-radius: 2px;
+  outline: none;
+  background-color: transparent;
+}
+
+.modal .input-anotacao textarea{
+  resize: none;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 2px;
+  outline: none;
+  background-color: transparent;
+}
+
+.modal .btn-modal {
+  width: 70px;
+  font-size: 0.875rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 200;
+  background-color: #000;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: white;
+  padding: 7px 10px 7px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.modal #close {
+  display: block;
+  position: absolute;
+  font-family: 'Roboto Slab', serif;
+  top: 10px;
+  right: 15px;
+}
+
+#close img {
+  width: 15px;
+  cursor: pointer;
+}
+
+.open {
+  display: flex !important;
+}
+
+.modal-edit h1 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}

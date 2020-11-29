@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notes</title>
+</head>
+<body>
+
+    <section class="container">
+      
+        <header>
+            <h1 class="titulo" title="Titulo">Notas</h1>
+
+            <nav>
+                <a href="" class="btn" title="Abri janela de criação de anotação" onclick="changeModal(event, '.modal')">Adicionar</a>
+                <span>
+                    <img src="img/lupa.svg" alt="Imagem Lupa" title="Pesquisar">
+                </span>
+            </nav>
+        </header>
+
+        <main>
+
+            <div id="container-notas">
+            </div>
+
+            <div class="mensagem">
+                <a href="https://www.flaticon.com/br/autores/darius-dan" title="Clique para ir até o criador da imagem" target="_blank"> <img src="img/pasta-vazia.svg" alt="Imagem de pasta-vazia" title="Clique para ir até o criador da imagem"></a>
+                <p>Você ainda não possui anotações</p> 
+            </div>
+
+        </main>
+
+    </section>
+
+    <section class="modal">
+        <form action="">
+
+            <span id="close" onclick="changeModal(event, '.modal')"><img src="img/close-window.svg" alt="Imagem Fechar" title="Fechar janela de criação"></span>
+
+            <div class="input-titulo">
+                <label for="titulo">Titulo</label>
+                <input type="text" name="titulo" title="Adicionar titulo da anotação" maxlength="35" placeholder="Opcional">
+            </div>
+
+            <div class="input-anotacao">
+                <label for="anotação">Anotação</label>
+                <textarea type="text" id="anotação" name="anotacao" rows="5" cols="26"></textarea>
+            </div>
+
+            <a href="" class="btn-modal" title="Criar anotação" onclick="createNotes(event)">Criar</a>
+        </form>
+    </section>
+
+    <section class="modal modal-edit">
+        <form action="">
+
+            <span id="close" onclick="changeModal(event)"><img src="img/close-window.svg" alt="Imagem Fechar" title="Fechar janela de edição"></span>
+
+            <div class="input-titulo">
+                <h1>Editar anotação</h1>
+                <label for="titulo">Titulo</label>
+                <input type="text" name="titulo" title="Adicionar titulo da anotação" maxlength="35">
+            </div>
+
+            <div class="input-anotacao">
+                <label for="anotação">Anotação</label>
+                <textarea type="text" id="anotação" name="anotacao" rows="5" cols="26"></textarea>
+            </div>
+
+            <input type="hidden" name="indice">
+            <a href="" class="btn-modal" title="Criar anotação" onclick="editNotes(event)">Editar</a>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
