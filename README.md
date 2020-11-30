@@ -9,5 +9,5 @@ Este é um pequeno projeto em que o usuário pode guardar as anotações de seu 
 
 ## Possíveis adições
 
-- Categorizar notas
-- Campo para pesquisar as notas
+- Categorizar notas |Em andamento|
+- Campo para pesquisar as notas XDescartadaX
