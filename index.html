@@ -16,7 +16,7 @@
             <h1 class="titulo" title="Titulo">Notas</h1>
 
             <nav>
-                <a href="" class="btn" title="Abri janela de criação de anotação" onclick="changeModal(event, '.modal')">Adicionar</a>
+                <a href="" class="btn" title="Abrir janela de criação de anotação" onclick="changeModal(event, '.modal')">Adicionar</a>
                 <span>
                     <img src="img/lupa.svg" alt="Imagem Lupa" title="Pesquisar">
                 </span>
@@ -24,7 +24,6 @@
         </header>
 
         <main>
-
             <div id="container-notas">
             </div>
 
@@ -44,7 +43,7 @@
 
             <div class="input-titulo">
                 <label for="titulo">Titulo</label>
-                <input type="text" name="titulo" title="Adicionar titulo da anotação" maxlength="35" placeholder="Opcional">
+                <input type="text" name="titulo" title="Adicionar titulo da anotação" maxlength="30" placeholder="Opcional">
             </div>
 
             <div class="input-anotacao">
@@ -64,12 +63,12 @@
             <div class="input-titulo">
                 <h1>Editar anotação</h1>
                 <label for="titulo">Titulo</label>
-                <input type="text" name="titulo" title="Adicionar titulo da anotação" maxlength="35">
+                <input type="text" name="titulo" title="Adicionar titulo da anotação" maxlength="30">
             </div>
 
             <div class="input-anotacao">
-                <label for="anotação">Anotação</label>
-                <textarea type="text" id="anotação" name="anotacao" rows="5" cols="26"></textarea>
+                <label for="anotacaoEdit">Anotação</label>
+                <textarea type="text" id="anotaçãoEdit" name="anotacaoEdit" rows="5" cols="26"></textarea>
             </div>
 
             <input type="hidden" name="indice">

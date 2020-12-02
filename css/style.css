@@ -59,6 +59,7 @@ header nav .btn {
 }
 
 header nav span img {
+  display: none;
   width: 30px;
   margin-top: 5px;
   cursor: pointer;
@@ -84,7 +85,7 @@ main .mensagem img {
 
 main #container-notas {
   max-width: 1440px;
-  margin: 0 20px;
+  margin: 20px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -153,6 +154,7 @@ main #container-notas .nota {
 
 .nota li {
   text-align: justify;
+  line-height: 24px;
   margin: 40px auto;
 }
 

@@ -85,7 +85,7 @@ label{
   display: flex !important;
 }
 
-.modal-edit h1 {
+.modal h1 {
   font-weight: normal;
   margin-bottom: 10px;
 }
